@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		472904B918DE18F500EC5BF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904B818DE18F500EC5BF5 /* Foundation.framework */; };
+		472904BB18DE18F500EC5BF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904BA18DE18F500EC5BF5 /* CoreGraphics.framework */; };
+		472904BD18DE18F500EC5BF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904BC18DE18F500EC5BF5 /* UIKit.framework */; };
+		472904BF18DE18F500EC5BF5 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904BE18DE18F500EC5BF5 /* SpriteKit.framework */; };
+		472904C518DE18F500EC5BF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 472904C318DE18F500EC5BF5 /* InfoPlist.strings */; };
+		472904C718DE18F500EC5BF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 472904C618DE18F500EC5BF5 /* main.m */; };
+		472904CB18DE18F500EC5BF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 472904CA18DE18F500EC5BF5 /* AppDelegate.m */; };
+		472904CE18DE18F500EC5BF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472904CC18DE18F500EC5BF5 /* Main.storyboard */; };
+		472904D118DE18F500EC5BF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472904D018DE18F500EC5BF5 /* ViewController.m */; };
+		472904D418DE18F500EC5BF5 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 472904D318DE18F500EC5BF5 /* MyScene.m */; };
+		472904D618DE18F500EC5BF5 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 472904D518DE18F500EC5BF5 /* Spaceship.png */; };
+		472904D818DE18F500EC5BF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472904D718DE18F500EC5BF5 /* Images.xcassets */; };
+		472904DF18DE18F500EC5BF5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904DE18DE18F500EC5BF5 /* XCTest.framework */; };
+		472904E018DE18F500EC5BF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904B818DE18F500EC5BF5 /* Foundation.framework */; };
+		472904E118DE18F500EC5BF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904BC18DE18F500EC5BF5 /* UIKit.framework */; };
+		472904E918DE18F500EC5BF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 472904E718DE18F500EC5BF5 /* InfoPlist.strings */; };
+		472904EB18DE18F500EC5BF5 /* Hawk_FlapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 472904EA18DE18F500EC5BF5 /* Hawk_FlapTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		472904E218DE18F500EC5BF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 472904AD18DE18F500EC5BF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 472904B418DE18F500EC5BF5;
+			remoteInfo = "Hawk Flap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		472904B518DE18F500EC5BF5 /* Hawk Flap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hawk Flap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		472904B818DE18F500EC5BF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		472904BA18DE18F500EC5BF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		472904BC18DE18F500EC5BF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		472904BE18DE18F500EC5BF5 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		472904C218DE18F500EC5BF5 /* Hawk Flap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hawk Flap-Info.plist"; sourceTree = "<group>"; };
+		472904C418DE18F500EC5BF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		472904C618DE18F500EC5BF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		472904C818DE18F500EC5BF5 /* Hawk Flap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hawk Flap-Prefix.pch"; sourceTree = "<group>"; };
+		472904C918DE18F500EC5BF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		472904CA18DE18F500EC5BF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		472904CD18DE18F500EC5BF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		472904CF18DE18F500EC5BF5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		472904D018DE18F500EC5BF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		472904D218DE18F500EC5BF5 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		472904D318DE18F500EC5BF5 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		472904D518DE18F500EC5BF5 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		472904D718DE18F500EC5BF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		472904DD18DE18F500EC5BF5 /* Hawk FlapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hawk FlapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		472904DE18DE18F500EC5BF5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		472904E618DE18F500EC5BF5 /* Hawk FlapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hawk FlapTests-Info.plist"; sourceTree = "<group>"; };
+		472904E818DE18F500EC5BF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		472904EA18DE18F500EC5BF5 /* Hawk_FlapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hawk_FlapTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		472904B218DE18F500EC5BF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472904BB18DE18F500EC5BF5 /* CoreGraphics.framework in Frameworks */,
+				472904BD18DE18F500EC5BF5 /* UIKit.framework in Frameworks */,
+				472904BF18DE18F500EC5BF5 /* SpriteKit.framework in Frameworks */,
+				472904B918DE18F500EC5BF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		472904DA18DE18F500EC5BF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472904DF18DE18F500EC5BF5 /* XCTest.framework in Frameworks */,
+				472904E118DE18F500EC5BF5 /* UIKit.framework in Frameworks */,
+				472904E018DE18F500EC5BF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		472904AC18DE18F500EC5BF5 = {
+			isa = PBXGroup;
+			children = (
+				472904C018DE18F500EC5BF5 /* Hawk Flap */,
+				472904E418DE18F500EC5BF5 /* Hawk FlapTests */,
+				472904B718DE18F500EC5BF5 /* Frameworks */,
+				472904B618DE18F500EC5BF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		472904B618DE18F500EC5BF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				472904B518DE18F500EC5BF5 /* Hawk Flap.app */,
+				472904DD18DE18F500EC5BF5 /* Hawk FlapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		472904B718DE18F500EC5BF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				472904B818DE18F500EC5BF5 /* Foundation.framework */,
+				472904BA18DE18F500EC5BF5 /* CoreGraphics.framework */,
+				472904BC18DE18F500EC5BF5 /* UIKit.framework */,
+				472904BE18DE18F500EC5BF5 /* SpriteKit.framework */,
+				472904DE18DE18F500EC5BF5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		472904C018DE18F500EC5BF5 /* Hawk Flap */ = {
+			isa = PBXGroup;
+			children = (
+				472904C918DE18F500EC5BF5 /* AppDelegate.h */,
+				472904CA18DE18F500EC5BF5 /* AppDelegate.m */,
+				472904CC18DE18F500EC5BF5 /* Main.storyboard */,
+				472904CF18DE18F500EC5BF5 /* ViewController.h */,
+				472904D018DE18F500EC5BF5 /* ViewController.m */,
+				472904D218DE18F500EC5BF5 /* MyScene.h */,
+				472904D318DE18F500EC5BF5 /* MyScene.m */,
+				472904D518DE18F500EC5BF5 /* Spaceship.png */,
+				472904D718DE18F500EC5BF5 /* Images.xcassets */,
+				472904C118DE18F500EC5BF5 /* Supporting Files */,
+			);
+			path = "Hawk Flap";
+			sourceTree = "<group>";
+		};
+		472904C118DE18F500EC5BF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				472904C218DE18F500EC5BF5 /* Hawk Flap-Info.plist */,
+				472904C318DE18F500EC5BF5 /* InfoPlist.strings */,
+				472904C618DE18F500EC5BF5 /* main.m */,
+				472904C818DE18F500EC5BF5 /* Hawk Flap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		472904E418DE18F500EC5BF5 /* Hawk FlapTests */ = {
+			isa = PBXGroup;
+			children = (
+				472904EA18DE18F500EC5BF5 /* Hawk_FlapTests.m */,
+				472904E518DE18F500EC5BF5 /* Supporting Files */,
+			);
+			path = "Hawk FlapTests";
+			sourceTree = "<group>";
+		};
+		472904E518DE18F500EC5BF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				472904E618DE18F500EC5BF5 /* Hawk FlapTests-Info.plist */,
+				472904E718DE18F500EC5BF5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		472904B418DE18F500EC5BF5 /* Hawk Flap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 472904EE18DE18F500EC5BF5 /* Build configuration list for PBXNativeTarget "Hawk Flap" */;
+			buildPhases = (
+				472904B118DE18F500EC5BF5 /* Sources */,
+				472904B218DE18F500EC5BF5 /* Frameworks */,
+				472904B318DE18F500EC5BF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hawk Flap";
+			productName = "Hawk Flap";
+			productReference = 472904B518DE18F500EC5BF5 /* Hawk Flap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		472904DC18DE18F500EC5BF5 /* Hawk FlapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 472904F118DE18F500EC5BF5 /* Build configuration list for PBXNativeTarget "Hawk FlapTests" */;
+			buildPhases = (
+				472904D918DE18F500EC5BF5 /* Sources */,
+				472904DA18DE18F500EC5BF5 /* Frameworks */,
+				472904DB18DE18F500EC5BF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				472904E318DE18F500EC5BF5 /* PBXTargetDependency */,
+			);
+			name = "Hawk FlapTests";
+			productName = "Hawk FlapTests";
+			productReference = 472904DD18DE18F500EC5BF5 /* Hawk FlapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		472904AD18DE18F500EC5BF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Wayne Knoesen";
+				TargetAttributes = {
+					472904DC18DE18F500EC5BF5 = {
+						TestTargetID = 472904B418DE18F500EC5BF5;
+					};
+				};
+			};
+			buildConfigurationList = 472904B018DE18F500EC5BF5 /* Build configuration list for PBXProject "Hawk Flap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 472904AC18DE18F500EC5BF5;
+			productRefGroup = 472904B618DE18F500EC5BF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				472904B418DE18F500EC5BF5 /* Hawk Flap */,
+				472904DC18DE18F500EC5BF5 /* Hawk FlapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		472904B318DE18F500EC5BF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472904C518DE18F500EC5BF5 /* InfoPlist.strings in Resources */,
+				472904D818DE18F500EC5BF5 /* Images.xcassets in Resources */,
+				472904D618DE18F500EC5BF5 /* Spaceship.png in Resources */,
+				472904CE18DE18F500EC5BF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		472904DB18DE18F500EC5BF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472904E918DE18F500EC5BF5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		472904B118DE18F500EC5BF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472904D418DE18F500EC5BF5 /* MyScene.m in Sources */,
+				472904D118DE18F500EC5BF5 /* ViewController.m in Sources */,
+				472904CB18DE18F500EC5BF5 /* AppDelegate.m in Sources */,
+				472904C718DE18F500EC5BF5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		472904D918DE18F500EC5BF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472904EB18DE18F500EC5BF5 /* Hawk_FlapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		472904E318DE18F500EC5BF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 472904B418DE18F500EC5BF5 /* Hawk Flap */;
+			targetProxy = 472904E218DE18F500EC5BF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		472904C318DE18F500EC5BF5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				472904C418DE18F500EC5BF5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		472904CC18DE18F500EC5BF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				472904CD18DE18F500EC5BF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		472904E718DE18F500EC5BF5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				472904E818DE18F500EC5BF5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		472904EC18DE18F500EC5BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		472904ED18DE18F500EC5BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		472904EF18DE18F500EC5BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hawk Flap/Hawk Flap-Prefix.pch";
+				INFOPLIST_FILE = "Hawk Flap/Hawk Flap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		472904F018DE18F500EC5BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hawk Flap/Hawk Flap-Prefix.pch";
+				INFOPLIST_FILE = "Hawk Flap/Hawk Flap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		472904F218DE18F500EC5BF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hawk Flap.app/Hawk Flap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hawk Flap/Hawk Flap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hawk FlapTests/Hawk FlapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		472904F318DE18F500EC5BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hawk Flap.app/Hawk Flap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hawk Flap/Hawk Flap-Prefix.pch";
+				INFOPLIST_FILE = "Hawk FlapTests/Hawk FlapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		472904B018DE18F500EC5BF5 /* Build configuration list for PBXProject "Hawk Flap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472904EC18DE18F500EC5BF5 /* Debug */,
+				472904ED18DE18F500EC5BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		472904EE18DE18F500EC5BF5 /* Build configuration list for PBXNativeTarget "Hawk Flap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472904EF18DE18F500EC5BF5 /* Debug */,
+				472904F018DE18F500EC5BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		472904F118DE18F500EC5BF5 /* Build configuration list for PBXNativeTarget "Hawk FlapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472904F218DE18F500EC5BF5 /* Debug */,
+				472904F318DE18F500EC5BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 472904AD18DE18F500EC5BF5 /* Project object */;
+}
