@@ -17,13 +17,18 @@
 		472904CE18DE18F500EC5BF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472904CC18DE18F500EC5BF5 /* Main.storyboard */; };
 		472904D118DE18F500EC5BF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472904D018DE18F500EC5BF5 /* ViewController.m */; };
 		472904D418DE18F500EC5BF5 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 472904D318DE18F500EC5BF5 /* MyScene.m */; };
-		472904D618DE18F500EC5BF5 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 472904D518DE18F500EC5BF5 /* Spaceship.png */; };
 		472904D818DE18F500EC5BF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472904D718DE18F500EC5BF5 /* Images.xcassets */; };
 		472904DF18DE18F500EC5BF5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904DE18DE18F500EC5BF5 /* XCTest.framework */; };
 		472904E018DE18F500EC5BF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904B818DE18F500EC5BF5 /* Foundation.framework */; };
 		472904E118DE18F500EC5BF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472904BC18DE18F500EC5BF5 /* UIKit.framework */; };
 		472904E918DE18F500EC5BF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 472904E718DE18F500EC5BF5 /* InfoPlist.strings */; };
 		472904EB18DE18F500EC5BF5 /* Hawk_FlapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 472904EA18DE18F500EC5BF5 /* Hawk_FlapTests.m */; };
+		472904F518DE1B6900EC5BF5 /* Bird1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472904F418DE1B6900EC5BF5 /* Bird1.png */; };
+		472904F718DE1B7400EC5BF5 /* Bird2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472904F618DE1B7400EC5BF5 /* Bird2.png */; };
+		472904FC18DE1BB700EC5BF5 /* Pipe2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472904F818DE1BB700EC5BF5 /* Pipe2.png */; };
+		472904FD18DE1BB700EC5BF5 /* Pipe1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472904F918DE1BB700EC5BF5 /* Pipe1.png */; };
+		472904FE18DE1BB700EC5BF5 /* Skyline.png in Resources */ = {isa = PBXBuildFile; fileRef = 472904FA18DE1BB700EC5BF5 /* Skyline.png */; };
+		472904FF18DE1BB700EC5BF5 /* Ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 472904FB18DE1BB700EC5BF5 /* Ground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +58,18 @@
 		472904D018DE18F500EC5BF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		472904D218DE18F500EC5BF5 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		472904D318DE18F500EC5BF5 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		472904D518DE18F500EC5BF5 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		472904D718DE18F500EC5BF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		472904DD18DE18F500EC5BF5 /* Hawk FlapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hawk FlapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		472904DE18DE18F500EC5BF5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		472904E618DE18F500EC5BF5 /* Hawk FlapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hawk FlapTests-Info.plist"; sourceTree = "<group>"; };
 		472904E818DE18F500EC5BF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		472904EA18DE18F500EC5BF5 /* Hawk_FlapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hawk_FlapTests.m; sourceTree = "<group>"; };
+		472904F418DE1B6900EC5BF5 /* Bird1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird1.png; sourceTree = "<group>"; };
+		472904F618DE1B7400EC5BF5 /* Bird2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bird2.png; sourceTree = "<group>"; };
+		472904F818DE1BB700EC5BF5 /* Pipe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pipe2.png; sourceTree = "<group>"; };
+		472904F918DE1BB700EC5BF5 /* Pipe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pipe1.png; sourceTree = "<group>"; };
+		472904FA18DE1BB700EC5BF5 /* Skyline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skyline.png; sourceTree = "<group>"; };
+		472904FB18DE1BB700EC5BF5 /* Ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,12 @@
 		472904C018DE18F500EC5BF5 /* Hawk Flap */ = {
 			isa = PBXGroup;
 			children = (
+				472904F618DE1B7400EC5BF5 /* Bird2.png */,
+				472904F818DE1BB700EC5BF5 /* Pipe2.png */,
+				472904F918DE1BB700EC5BF5 /* Pipe1.png */,
+				472904FA18DE1BB700EC5BF5 /* Skyline.png */,
+				472904FB18DE1BB700EC5BF5 /* Ground.png */,
+				472904F418DE1B6900EC5BF5 /* Bird1.png */,
 				472904C918DE18F500EC5BF5 /* AppDelegate.h */,
 				472904CA18DE18F500EC5BF5 /* AppDelegate.m */,
 				472904CC18DE18F500EC5BF5 /* Main.storyboard */,
@@ -128,7 +144,6 @@
 				472904D018DE18F500EC5BF5 /* ViewController.m */,
 				472904D218DE18F500EC5BF5 /* MyScene.h */,
 				472904D318DE18F500EC5BF5 /* MyScene.m */,
-				472904D518DE18F500EC5BF5 /* Spaceship.png */,
 				472904D718DE18F500EC5BF5 /* Images.xcassets */,
 				472904C118DE18F500EC5BF5 /* Supporting Files */,
 			);
@@ -240,9 +255,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472904FC18DE1BB700EC5BF5 /* Pipe2.png in Resources */,
+				472904FD18DE1BB700EC5BF5 /* Pipe1.png in Resources */,
 				472904C518DE18F500EC5BF5 /* InfoPlist.strings in Resources */,
+				472904F718DE1B7400EC5BF5 /* Bird2.png in Resources */,
 				472904D818DE18F500EC5BF5 /* Images.xcassets in Resources */,
-				472904D618DE18F500EC5BF5 /* Spaceship.png in Resources */,
+				472904FE18DE1BB700EC5BF5 /* Skyline.png in Resources */,
+				472904F518DE1B6900EC5BF5 /* Bird1.png in Resources */,
+				472904FF18DE1BB700EC5BF5 /* Ground.png in Resources */,
 				472904CE18DE18F500EC5BF5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
