@@ -10,12 +10,13 @@
 
 @interface MyScene () <SKPhysicsContactDelegate> {
     SKSpriteNode* _bird;
-    SKColor* _skyColor;
-    SKTexture* _pipeTexture1;
-    SKTexture* _pipeTexture2;
-    SKAction* _movePipesAndRemove;
-    SKNode* _moving;
-    
+    SKColor *_skyColor;
+    SKTexture *_pipeTexture1;
+    SKTexture *_pipeTexture2;
+    SKAction *_movePipesAndRemove;
+    SKNode *_moving;
+    SKNode *_pipes;
+    BOOL _canRestart;
 }
 @end
 
@@ -31,6 +32,8 @@ static NSInteger const kVerticalPipeGap = 100;
     if (self = [super initWithSize:size]) {
         /*Setup your size here*/
         
+        _canRestart = NO;
+        
         self.physicsWorld.gravity = CGVectorMake(0.0, -5.0);
         self.physicsWorld.contactDelegate = self;
         
@@ -39,6 +42,9 @@ static NSInteger const kVerticalPipeGap = 100;
         
         _moving = [SKNode node];
         [self addChild:_moving];
+        
+        _pipes = [SKNode node];
+        [_moving addChild:_pipes];
         
         SKTexture* birdTexture1 = [SKTexture textureWithImageNamed:@"Bird1"];
         birdTexture1.filteringMode = SKTextureFilteringNearest;
@@ -157,7 +163,7 @@ static NSInteger const kVerticalPipeGap = 100;
     [pipePair addChild:pipe2];
     
     [pipePair runAction:_movePipesAndRemove];
-    [_moving addChild:pipePair];
+    [_pipes addChild:pipePair];
 
 }
 
@@ -166,7 +172,9 @@ static NSInteger const kVerticalPipeGap = 100;
     /* Called when a touch begins */
     if (_moving.speed > 0) {
     _bird.physicsBody.velocity = CGVectorMake(0, 0);
-    [_bird.physicsBody applyImpulse:CGVectorMake(0, 8)];
+    [_bird.physicsBody applyImpulse:CGVectorMake(0, 4)];
+    } else if (_canRestart) {
+        [self resetScene];
     }
 }
 
@@ -199,7 +207,25 @@ CGFloat clamp(CGFloat min, CGFloat max, CGFloat value) {
         self.backgroundColor = [SKColor redColor];
     }], [SKAction waitForDuration:0.05], [SKAction runBlock:^{
         self.backgroundColor = _skyColor;
-    }], [SKAction waitForDuration:0.05]]] count:4]]] withKey:@"flash"];
+    }], [SKAction waitForDuration:0.05]]] count:4], [SKAction runBlock:^{
+        _canRestart = YES;
+    }]]] withKey:@"flash"];
+    
+}
+
+-(void)resetScene {
+    //Move the bird to origional postion and reset velocity
+    _bird.position = CGPointMake(self.frame.size.width / 4, CGRectGetMidY(self.frame));
+    _bird.physicsBody.velocity = CGVectorMake(0, 0);
+    
+    //Remove all existing Pipes
+    [_pipes removeAllChildren];
+    
+    //Reset canRestart
+    _canRestart = NO;
+    
+    //Restart animation
+    _moving.speed = 1;
     
 }
 
