@@ -76,7 +76,7 @@ static NSInteger const kVerticalPipeGap = 100;
             [sprite setScale:2.0];
             sprite.position = CGPointMake(i * sprite.size.width, sprite.size.height / 2);
             [sprite runAction:movesGroundSpritesForever];
-            [self addChild:sprite];
+            [_moving addChild:sprite];
         }
         
         // Create ground physics
@@ -104,7 +104,7 @@ static NSInteger const kVerticalPipeGap = 100;
             sprite.zPosition = -20;
             sprite.position = CGPointMake(i * sprite.size.width, sprite.size.height / 2 + groundTexture.size.height * 2);
             [sprite runAction:moveSkyineSpritesForever];
-            [self addChild:sprite];
+            [_moving addChild:sprite];
         }
         
         //Create pipes
@@ -157,16 +157,17 @@ static NSInteger const kVerticalPipeGap = 100;
     [pipePair addChild:pipe2];
     
     [pipePair runAction:_movePipesAndRemove];
-    [self addChild:pipePair];
+    [_moving addChild:pipePair];
 
 }
 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    if (_moving.speed > 0) {
     _bird.physicsBody.velocity = CGVectorMake(0, 0);
     [_bird.physicsBody applyImpulse:CGVectorMake(0, 8)];
-    
+    }
 }
 
 
@@ -188,6 +189,10 @@ CGFloat clamp(CGFloat min, CGFloat max, CGFloat value) {
 
 
 -(void)didBeginContact:(SKPhysicsContact *)contact {
+    if (_moving.speed > 0) {
+        _moving.speed = 0;
+    }
+    
     //FlashBackground if contact detected
     [self removeActionForKey:@"flash"];
     [self runAction:[SKAction sequence:@[[SKAction repeatAction:[SKAction sequence:@[[SKAction runBlock:^{
